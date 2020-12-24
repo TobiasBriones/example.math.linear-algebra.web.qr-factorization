@@ -1,0 +1,111 @@
+<!--
+  ~ Copyright (c) 2019 Tobias Briones. All rights reserved.
+  ~
+  ~ SPDX-License-Identifier: MIT
+  ~
+  ~ This file is part of Example Project: QR Factorization.
+  ~
+  ~ This source code is licensed under the MIT License found in the
+  ~ LICENSE file in the root directory of this source tree or at
+  ~ https://opensource.org/licenses/MIT.
+  -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <title>Factorización QR</title>
+    <link rel="icon"
+          type="image/png"
+          href="https://raw.githubusercontent.com/TobiasBriones/images/main/example-projects/ep/ep-favicon.png"
+          sizes="96x96">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quantico">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <h1>
+          ALN - Factorización QR de una matriz
+        </h1>
+      </nav>
+    </header>
+
+    <div id="container">
+
+      <div class="input-pane">
+
+        <div>
+          <span>Ingresa la matriz a factorizar mediante el algoritmo QR</span>
+        </div>
+
+        <div class="matrix">
+          <div>
+            <div>1</div>
+            <div>1</div>
+            <div>0</div>
+          </div>
+          <div>
+            <div>1</div>
+            <div>0</div>
+            <div>1</div>
+          </div>
+          <div>
+            <div>0</div>
+            <div>1</div>
+            <div>1</div>
+          </div>
+        </div>
+        <div class="matrix-size">
+          <div>
+            <div>
+              <span>Tamaño:</span>
+              <input id="rows" type="number" value="3">
+              <label for="rows"></label>
+            </div>
+            <div>
+              <span>Valores:</span>
+              <input id="values" type="text" value="1,1,0,1,0,1,0,1,1">
+              <label for="values"></label>
+            </div>
+            <div>
+              <button id="update">CALCULAR</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="results">
+        <div class="message"></div>
+        <div>Matriz Q</div>
+        <div id="qmatrix" class="matrix"></div>
+        <div>Matriz R</div>
+        <div id="rmatrix" class="matrix"></div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>This software uses the open source library:</p>
+      <ul>
+        <li>
+          math.js licensed under the Apache 2.0 license, check at <a href="https://github.com/josdejong/mathjs">https://github.com/josdejong/mathjs</a>
+        </li>
+      </ul>
+      <div>© 2019 Tobias Briones - QR Factorization EP
+        <a href="https://github.com/TobiasBriones/example.math.linear-algebra.web.qr-factorization">
+          GitHub
+        </a>
+      </div>
+    </footer>
+    <script src="../libs/mathjs/math.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+
+</html>

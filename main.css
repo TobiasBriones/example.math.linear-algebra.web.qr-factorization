@@ -1,0 +1,87 @@
+/*
+ * Copyright (c) 2019 Tobias Briones. All rights reserved.
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * This file is part of Example Project: QR Factorization.
+ *
+ * This source code is licensed under the MIT License found in the
+ * LICENSE file in the root directory of this source tree or at
+ * https://opensource.org/licenses/MIT.
+ */
+
+* {
+  box-sizing: content-box;
+  font-family: 'Quantico', sans-serif;
+}
+
+body {
+  min-width: 480px;
+}
+
+nav {
+  padding: 1% 2%;
+}
+
+footer > div {
+  padding: 8px 160px 16px 160px;
+  font-size: 12px;
+  font-style: italic;
+  color: #737373;
+}
+
+#container {
+  padding: 2% 15%;
+}
+
+.input-pane {
+  padding: 24px 32px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: transparent;
+  border-right: transparent;
+}
+
+.matrix-size > div > div {
+  margin: 8px 0;
+}
+
+.matrix-size span {
+  display: inline-block;
+  width: 120px;
+}
+
+/* Rows */
+.matrix > div {
+  height: 36px;
+  margin: 4px 0;
+  overflow-x: auto;
+}
+
+/* Columns */
+.matrix > div > div {
+  display: inline-block;
+  width: 30%;
+  margin: 0 4px;
+}
+
+.matrix-size button {
+  width: 240px;
+  font-weight: bold;
+  background: mediumslateblue;
+  border: none;
+  transition: all 200ms;
+}
+
+.matrix-size button:hover {
+  box-shadow: 2px 4px 8px #CACACA;
+}
+
+.results {
+  margin-top: 48px;
+}
+
+.results .matrix {
+  padding: 5px;
+  margin: 0 0 48px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
